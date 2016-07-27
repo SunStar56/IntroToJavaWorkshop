@@ -12,6 +12,9 @@ public class PentagonCrazy {
 		Robot R2D2 = new Robot();
 		R2D2.setRandomPenColor();
 		R2D2.setSpeed(10);
+		R2D2.hide();
+		R2D2.sparkle();
+		R2D2.setWindowColor(10, 9, 8);
 	
 		// 3. Put the robot's pen down
 		R2D2.penDown();
@@ -24,7 +27,7 @@ public class PentagonCrazy {
 		int sides = 5;
 		
 		// 5. Make a variable for the angle you want the robot to turn. Hint: you can divide in Java using "/". Can’t test until step 6.
-		int angles = 360/5;
+		int angles = 360/3;
 		
 		// 7. Do steps #2 to #11, 200 times. When this is done you should see a pentagon.
 for (int i = 0; i < 200; i++) {
@@ -32,6 +35,7 @@ for (int i = 0; i < 200; i++) {
 	R2D2.penDown();
 	R2D2.turn(angles);
 	R2D2.turn(1);
+	R2D2.setRandomPenColor();
 }
 			// 2. Move the robot 200 pixels
 		R2D2.move(200);
